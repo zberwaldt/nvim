@@ -15,5 +15,6 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme onedark')
         end
     })
-    
+
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})   
 end)
