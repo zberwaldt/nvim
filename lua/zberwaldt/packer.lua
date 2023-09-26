@@ -35,4 +35,5 @@ return require('packer').startup(function(use)
     }
     use('vimwiki/vimwiki')
     use('github/copilot.vim')
+    use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
 end)
